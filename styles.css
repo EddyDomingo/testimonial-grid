@@ -89,7 +89,7 @@ p{
 }
 
 .card-purple::before{
-    content: url('./images/symbol.png');
+    content: url('symbol.png');
     position: absolute;
     z-index: 1;
     right: 10%;
