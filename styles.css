@@ -1,0 +1,131 @@
+*{
+    border:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:1.5rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    
+}
+
+main{
+    width:100%;
+    /* border: solid black 1px; */
+    margin: 0 auto;
+    
+}
+
+.item1{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.item3{
+    
+    grid-column: 2 / span 3;
+    grid-row: 2;   
+}
+
+.item4{
+    grid-column: 4;
+    grid-row: 1 / span 3;
+}
+
+h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1.125rem 0;
+}
+
+p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.testimonial{
+    margin-bottom: 2rem;
+}
+
+.names{
+    display: inline-block;
+    text-transform: capitalize;
+    margin: 0 0 0 0.8rem;
+    transform: translateY(-5px);
+}
+
+.names::after{
+    content: 'Verified Graduate';
+    display: block;
+    font-size: 0.6rem;
+    font-size: 400;
+    opacity: 0.5;
+
+}
+
+.card{
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 5px 5px 15px 4px rgba(84,84,84,0.53); 
+    box-shadow: 5px 5px 15px 4px rgba(84,84,84,0.53);
+    padding:2rem;
+    margin: 1.5rem 0;
+    padding:2rem;
+    width: 100%;
+}
+
+.card-purple,
+.card-grey,
+.card-black{
+   
+    color: white;
+}
+
+.card-purple{
+    background: #733FC8 ;
+    max-width: 600px;
+    position: relative;
+}
+
+.card-purple::before{
+    content: url('./images/symbol.png');
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+    opacity: 0.2;
+}
+
+.card-grey{
+    background: #48556A ;
+    max-width: 300px;
+}
+
+.card-black{
+    background: #19202D ;
+    max-width: 600px;
+}
+
+
+.card-white{
+    color:#48556A;
+    max-width: 300px;
+}
+
+@media only screen and (min-width: 650px) {
+    main{
+        display: grid;
+        grid-gap: 10px;
+        max-width: 1300px;
+        padding: 1rem;
+    
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    
+    p{
+        font-size: 1rem;
+        
+    }
+  }
